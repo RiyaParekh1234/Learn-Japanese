@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>INTRODUCTION</title>
+	<link rel="stylesheet" href="C:\Users\lenovo\Downloads\TE-7056\website\a1.css">
+</head>
+<script>
+	function validate()
+	{
+		var name=document.forms["form"]["fname"].value;
+		if(name=="")
+		{
+			alert("Enter name!");
+			return false;
+		}
+		var phno=document.forms["form"]["phno"].value;
+		if((phno.length!=10) || isNaN(phno))
+		{
+			alert("Invalid contact number!");
+			return false;
+		}
+		var email=document.forms["form"]["mail"].value;
+		var mail_val=/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+		if(!mail_val.test(email))
+		{
+			alert("Invalid email!");
+			return false;
+		}
+		var pswd=document.forms["form"]["psw"].value;
+		if(pswd.length<8)
+		{
+			alert("Enter valid password!");
+			return false;
+		}
+		var con_pswd=document.forms["form"]["c_psw"].value;
+		if(pswd!=con_pswd)
+		{
+			alert("Doesn't match original password!");
+			return false;
+		}
+		var pin=document.forms["form"]["pin"].value;
+		if(pin.length!=6 || isNaN(pin))
+		{
+			alert("Invalid Pincode!");
+			return false;
+		}
+		else
+		{
+			return true;
+		}
+	}
+	</script>
+	<body id="body4">
+	<header id="head">
+		<p id="para">
+		<a id="foot" href="intro1.html">About</a>
+		<a id="foot" href="schedule.html">Timetable</a>
+		<a id="foot" href="univ.html">Partners</a>
+		<a id="foot" href="assign1.html">Home</a><br>
+		<h4>ONLINE REGISTRATION</h4>
+	</header>
+	<form name="form" method="get" action="final.html">
+		Full Name:<input type="text" name="fname" id="fn"><br><br>
+		Contact:<input type="tel" name="phno" id="ph"><br><br>
+		Email:<input type="email" name="mail" id="ml"><br><br>
+		Password:<input type="password" name="psw" id="pd"><br><br>
+		Confirm Password:<input type="password" name="c_psw" id="pd_c"><br><br>
+		Pincode:<input type="tel" name="pin" id="pc"><br><br>
+		<button type="submit" onclick="return validate()">Apply!</button>
+	</form>
+	<footer id="head">
+		<p id="para"><h4>CONTACT US AT:</h4>
+	        <a href="https://www.facebook.com/StudyGoWorkJAPAN/"><img id="fb" src="fb.png" alt="Facebook page"></a>
+	        <a href="https://www.instagram.com/studygoworkjapan/"><img id="insta" src="insta.jpeg" alt="Insta page"></a></p>
+	</footer>
+</body>
+</html>

@@ -1,0 +1,126 @@
+#body
+{
+	text-align:center;
+	background-image: url(first.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	color:white;
+}
+
+#head
+{
+	font-family:serif;
+	font-style:bold;
+	font-size:40px;
+	text-align:center;	
+}
+
+#fb,#insta
+{
+	height:50px;
+	width:50px;
+	border-radius:25px;
+}
+
+#body1
+{
+	text-align:center;
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(sakura.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	background-position:center;
+	color:white;
+}
+
+#para1
+{
+	text-align:center;
+	font-size:20px;
+	color: #FAD7A0;
+}
+
+#para
+{
+	font-size:50px;
+	font-family:serif;
+	word-spacing:20px;
+	font-size:40px;
+	text-align:center;
+}
+
+#para2
+{
+	text-align:center;
+	font-size:20px;
+	font-family:Norasi Bold Italic;
+	color:  #ebdef0;
+}
+
+#heading
+{
+	color:white;
+}
+
+#heading1
+{
+	font-family:serif;
+	font-style:bold;
+	font-size:40px;
+	text-align:center;
+	color:#1abc9c;	
+}
+
+#body3
+{
+	text-align:center;
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(images.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+}
+
+#body2
+{
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(japan.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:100vh;
+	background-position:center;
+}
+
+#body4
+{
+	background-image:url(foot.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	height:100vh;
+	background-position:center;
+	text-align:center;
+}
+
+#body5
+{
+	background-image:url(final.jpg);
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-position:center;
+}
+
+#foot
+{
+	font-style:bold;
+	color:black;
+}
+
+a:hover
+{
+	font-family:cursive;
+	font-style:oblique;
+	font-size:40px;
+	color:black;
+}
+
+a,a:visited
+{
+	color:white;
+}
